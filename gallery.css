@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    padding:6px;
+    background-color: #00ff00;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.heading {
+    background-color: blue;
+    color: white;
+    font-size: x-large;
+    text-align: center;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    border: 5px solid red;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    text-shadow: 2px 2px 5px black;
+    
+    width:100%;
+    z-index:5;
+}
+/* Grid container */
+/* Grid container */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+    gap: 5px;
+    padding: 20px;
+}
+
+/* Each image card */
+.image-card {
+    position: relative;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: #f9f9f9;
+}
+
+.image-card img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+/* Delete button styling */
+.delete-button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1;
+}
+
+.delete-button:hover {
+    background-color: darkred;
+}
+.delete-button:hover {
+    background-color: darkred;
+}
+.upload-box {
+    width: 250px;
+    height: 150px;
+    border: 2px dashed #ccc;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    color: #666;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+.upload-box:hover {
+    border-color: #333;
+    color: #000;
+}
+

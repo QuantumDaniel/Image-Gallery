@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="gallery.css">
+
+</head>
+
+<body>
+    <div class="heading">
+        <h1>Gallery</h1>
+    </div>
+    <div class="upload-box" onclick="document.getElementById('fileInput').click()">
+    Click to Upload Image
+</div>
+<input type="file" id="fileInput" style="display:none;">
+    
+        <div class="image-grid js-image-grid"></div>
+    <script src="gallery.js"></script>
+</body>
+
+</html>
